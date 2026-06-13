@@ -28,7 +28,7 @@ class RDIRCDConfigBase:
 	#  for example: 1/4:5 (interval=0.25s, rate=4/s, burst=5), 5 (burst=1), 0.5:10, 20:30,
 	#  and also special "0" value can be used as "no rate limit", or "inf" for "always block".
 
-	version = '26.05.3' # git-version: py-str
+	version = '26.06.0' # git-version: py-str
 
 	auth_email = '' # discord account email, used to login there
 	auth_password = ''
@@ -288,7 +288,7 @@ class RDIRCDConfigBase:
 	# See also corresponding [irc] len-dont-split-re opt to avoid breaking these links in long msgs.
 	discord_terminal_links_tpl = '\x1b]8;;{url}\x1b\\{name}\x1b]8;;\x1b\\'
 
-	# Changes discord status on IRC /away and/or IRC client connect/disconnect.
+	# Changes discord presence/status on IRC /away and/or IRC client connect/disconnect.
 	discord_status_set = True
 	# IRC events to set discord status for - connect, disconnect, away, back.
 	# Discord statuses - online, invisible, idle, dnd, offline, streaming, unknown.
